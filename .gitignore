@@ -1,0 +1,32 @@
+# --- Python ---------------------------------------------------------------
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+
+# --- Environment (never commit credentials) --------------------------------
+.env
+
+# --- Data (large raw files — link to Kaggle instead of committing) ---------
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.parquet
+data/processed/quarantine/
+
+# --- Generated reports / outputs -------------------------------------------
+schema_report.md
+python/outputs/*.png
+python/outputs/*.jpg
+models/*.pkl
+
+# --- Power BI ---------------------------------------------------------------
+powerbi/*.pbix
+
+# --- OS / editors -----------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini

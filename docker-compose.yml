@@ -1,0 +1,46 @@
+# ============================================================================
+# BharatInsight — Phase 0: PostgreSQL 16 service
+#
+#   docker-compose up -d postgres     # start the database
+#   docker-compose logs -f postgres   # watch startup / schema init
+#   docker-compose down               # stop (data persists in the volume)
+#   docker-compose down -v            # stop AND delete all data (full reset)
+#
+# Variables are substituted from the .env file in this directory
+# (copy .env.example to .env first).
+#
+# NOTE: sql/01_schema.sql is mounted into /docker-entrypoint-initdb.d/, so the
+# schema is created automatically — but ONLY on the very first start with an
+# empty data volume. To re-apply after `down -v`, just `up -d` again.
+# ============================================================================
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: bharatinsight_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: ${POSTGRES_DB:-bharatinsight_db}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - bharatinsight_pgdata:/var/lib/postgresql/data
+      - ./sql/01_schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - bharatinsight_net
+
+volumes:
+  bharatinsight_pgdata:
+    name: bharatinsight_pgdata
+
+networks:
+  bharatinsight_net:
+    name: bharatinsight_net
