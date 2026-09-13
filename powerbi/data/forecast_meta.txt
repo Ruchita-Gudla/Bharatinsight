@@ -1,0 +1,4 @@
+engine: Prophet + Diwali/Holi holiday regressor
+holdout_weeks: 12
+MAE_INR: 1,162,062
+MAPE_pct: 139.9

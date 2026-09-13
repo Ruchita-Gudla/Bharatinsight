@@ -1,0 +1,25 @@
+{
+  "name": "BharatInsight (Zomato)",
+  "dataColors": [
+    "#E23744",
+    "#2C3E50",
+    "#2980B9",
+    "#E67E22",
+    "#27AE60",
+    "#8E44AD",
+    "#16A085",
+    "#F39C12"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#2C3E50",
+  "tableAccent": "#E23744",
+  "good": "#27AE60",
+  "neutral": "#F39C12",
+  "bad": "#E23744",
+  "textClasses": {
+    "title": { "fontFace": "Segoe UI Semibold", "fontSize": 14, "color": "#2C3E50" },
+    "header": { "fontFace": "Segoe UI Semibold", "fontSize": 12, "color": "#2C3E50" },
+    "label": { "fontFace": "Segoe UI", "fontSize": 10, "color": "#2C3E50" },
+    "callout": { "fontFace": "Segoe UI Semibold", "fontSize": 28, "color": "#E23744" }
+  }
+}

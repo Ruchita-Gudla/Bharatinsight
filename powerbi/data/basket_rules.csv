@@ -1,0 +1,51 @@
+rule,antecedents,consequents,support,confidence,lift
+Desserts  ->  Ice Cream,Desserts,Ice Cream,0.036,0.2624,3.921
+Ice Cream  ->  Desserts,Ice Cream,Desserts,0.036,0.5372,3.921
+Desserts  ->  Ice Cream + North Indian,Desserts,Ice Cream + North Indian,0.01,0.0732,3.8737
+Ice Cream + North Indian  ->  Desserts,Ice Cream + North Indian,Desserts,0.01,0.5307,3.8737
+Chinese + Ice Cream  ->  Desserts,Chinese + Ice Cream,Desserts,0.0108,0.5234,3.8206
+Desserts  ->  Chinese + Ice Cream,Desserts,Chinese + Ice Cream,0.0108,0.0789,3.8206
+Chinese + Desserts  ->  Ice Cream,Chinese + Desserts,Ice Cream,0.0108,0.2519,3.7631
+Ice Cream  ->  Chinese + Desserts,Ice Cream,Chinese + Desserts,0.0108,0.1614,3.7631
+Ice Cream  ->  Desserts + North Indian,Ice Cream,Desserts + North Indian,0.01,0.1498,3.7064
+Desserts + North Indian  ->  Ice Cream,Desserts + North Indian,Ice Cream,0.01,0.2481,3.7064
+Juices  ->  Beverages,Juices,Beverages,0.013,0.569,3.3096
+Beverages  ->  Juices,Beverages,Juices,0.013,0.0754,3.3096
+Desserts + Indian  ->  Bakery,Desserts + Indian,Bakery,0.0105,0.3257,2.9712
+Bakery  ->  Desserts + Indian,Bakery,Desserts + Indian,0.0105,0.0958,2.9712
+Bakery + Chinese  ->  Desserts,Bakery + Chinese,Desserts,0.0136,0.3984,2.9081
+Desserts  ->  Bakery + Chinese,Desserts,Bakery + Chinese,0.0136,0.0995,2.9081
+Desserts  ->  Bakery + Indian,Desserts,Bakery + Indian,0.0105,0.0767,2.9005
+Bakery + Indian  ->  Desserts,Bakery + Indian,Desserts,0.0105,0.3974,2.9005
+Bakery  ->  Chinese + Desserts,Bakery,Chinese + Desserts,0.0136,0.1243,2.8979
+Chinese + Desserts  ->  Bakery,Chinese + Desserts,Bakery,0.0136,0.3177,2.8979
+Desserts  ->  Bakery,Desserts,Bakery,0.0435,0.3172,2.8934
+Bakery  ->  Desserts,Bakery,Desserts,0.0435,0.3964,2.8934
+Pizzas  ->  Italian,Pizzas,Italian,0.023,0.1905,2.828
+Italian  ->  Pizzas,Italian,Pizzas,0.023,0.3412,2.828
+Bakery + North Indian  ->  Desserts,Bakery + North Indian,Desserts,0.0117,0.3775,2.7558
+Desserts  ->  Bakery + North Indian,Desserts,Bakery + North Indian,0.0117,0.0854,2.7558
+Bakery  ->  Desserts + North Indian,Bakery,Desserts + North Indian,0.0117,0.1068,2.641
+Desserts + North Indian  ->  Bakery,Desserts + North Indian,Bakery,0.0117,0.2895,2.641
+North Indian  ->  Punjabi,North Indian,Punjabi,0.019,0.0529,2.1651
+Punjabi  ->  North Indian,Punjabi,North Indian,0.019,0.7782,2.1651
+Mughlai  ->  Biryani,Mughlai,Biryani,0.0128,0.3648,2.0836
+Biryani  ->  Mughlai,Biryani,Mughlai,0.0128,0.0731,2.0836
+Sweets  ->  Snacks,Sweets,Snacks,0.0156,0.4041,1.9747
+Snacks  ->  Sweets,Snacks,Sweets,0.0156,0.0764,1.9747
+Chinese  ->  Asian,Chinese,Asian,0.0121,0.0306,1.9015
+Asian  ->  Chinese,Asian,Chinese,0.0121,0.7504,1.9015
+Biryani + Chinese  ->  Indian + North Indian,Biryani + Chinese,Indian + North Indian,0.0124,0.1763,1.6844
+Indian + North Indian  ->  Biryani + Chinese,Indian + North Indian,Biryani + Chinese,0.0124,0.1184,1.6844
+Beverages  ->  Ice Cream,Beverages,Ice Cream,0.0189,0.1098,1.6401
+Ice Cream  ->  Beverages,Ice Cream,Beverages,0.0189,0.282,1.6401
+Chinese + Pizzas  ->  Fast Food,Chinese + Pizzas,Fast Food,0.011,0.2673,1.5969
+Fast Food  ->  Chinese + Pizzas,Fast Food,Chinese + Pizzas,0.011,0.0658,1.5969
+Fast Food  ->  American,Fast Food,American,0.0129,0.0771,1.5917
+American  ->  Fast Food,American,Fast Food,0.0129,0.2664,1.5917
+Mughlai  ->  North Indian,Mughlai,North Indian,0.0194,0.554,1.5413
+North Indian  ->  Mughlai,North Indian,Mughlai,0.0194,0.0541,1.5413
+Fast Food  ->  Pizzas,Fast Food,Pizzas,0.031,0.1852,1.535
+Pizzas  ->  Fast Food,Pizzas,Fast Food,0.031,0.2569,1.535
+Chinese + Desserts  ->  Beverages,Chinese + Desserts,Beverages,0.0111,0.2597,1.5105
+Beverages  ->  Chinese + Desserts,Beverages,Chinese + Desserts,0.0111,0.0648,1.5105

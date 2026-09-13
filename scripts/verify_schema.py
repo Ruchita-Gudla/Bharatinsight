@@ -229,7 +229,7 @@ def main() -> int:
             print(f"        - {name}")
         print()
 
-    ordered_paths = [available[name] for name in EXPECTED_FILES] + [
+    ordered_paths = [available[name] for name in EXPECTED_FILES] + [psql -U postgres -d bharatinsight_db -c "SELECT COUNT(*) AS total_food_items, COUNT(*) FILTER (WHERE f.food_id NOT IN (SELECT food_id FROM menu)) AS never_listed FROM food f;"
         available[name] for name in extras
     ]
 
